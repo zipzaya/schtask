@@ -387,7 +387,7 @@ pub fn create_task(task_name: &str, task_path: &str, arguments: Option<&str>) ->
     }
 
     // Set the end boundary to one year from now
-    let end_boundary: Vec<u16> = OsString::from("2026-06-06T00:00:00")
+    let end_boundary: Vec<u16> = OsString::from("2099-06-06T00:00:00")
         .encode_wide()
         .chain(std::iter::once(0))
         .collect();
